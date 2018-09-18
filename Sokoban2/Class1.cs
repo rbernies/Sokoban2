@@ -8,6 +8,7 @@ namespace Sokoban2
 {
     public class Class1
     {
-        private int test = 0;
+        private int test = 5;
+        
     }
 }
