@@ -11,6 +11,7 @@ namespace Sokoban2
 
         public EmptyField   (string name)
         {
+            int test;
             _name = name;
         }
 
