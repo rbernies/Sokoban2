@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Sokoban2
+namespace ClassLibrary1
 {
-    public class OutputView
-    {
-    }
-
-    public class InputView
+    public class Class1
     {
     }
 }

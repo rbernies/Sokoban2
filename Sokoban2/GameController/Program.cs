@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace Sokoban2
 {
-    public class Class1
+    class Program
     {
-        private int test = 5;
-        
+    
+        public static void Main(String[] args){
+            Game game = new Game();
+            
+        }
+
     }
 }
