@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameModel\DestinationField.cs" />
+    <Compile Include="GameModel\EmptyField.cs" />
     <Compile Include="GameModel\Box.cs" />
     <Compile Include="GameController\Program.cs" />
     <Compile Include="GameController\Game.cs" />

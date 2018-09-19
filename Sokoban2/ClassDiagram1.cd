@@ -3,7 +3,7 @@
   <Class Name="Sokoban2.Game" Collapsed="true">
     <Position X="1.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAEAAAAIAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameController\Game.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -35,18 +35,18 @@
       <FileName>GameModel\Truck.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Sokoban2.DestinationField">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameModel\DestinationField.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="Sokoban2.EmptyField">
-    <Position X="4" Y="4.75" Width="1.5" />
+    <Position X="6.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameModel\EmptyField.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Sokoban2.DestinationField">
-    <Position X="6" Y="4.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>GameModel\DestinationField.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
