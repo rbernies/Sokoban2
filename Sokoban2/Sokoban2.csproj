@@ -49,6 +49,7 @@
     <Compile Include="GameModel\Box.cs" />
     <Compile Include="GameController\Program.cs" />
     <Compile Include="GameController\Game.cs" />
+    <Compile Include="GameModel\FileReader.cs" />
     <Compile Include="GameModel\GameObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GameModel\Truck.cs" />

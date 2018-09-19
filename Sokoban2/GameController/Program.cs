@@ -11,7 +11,6 @@ namespace Sokoban2
     
         public static void Main(String[] args){
             Game game = new Game();
-            
         }
 
     }
