@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sokoban2.GameView;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +10,14 @@ namespace Sokoban2
    
     public class Game
     {
-       
+        WelcomeScreen welcome = new WelcomeScreen();
+        UserInput input = new UserInput();
+        Board board = new Board();
+
         public Game()
         {
-                              
+            welcome.displayWelcomeScreen();           
+            board.makeLevel(input.getUserInputForLevel());
         }            
-    }
-
-   
+    }  
 }
