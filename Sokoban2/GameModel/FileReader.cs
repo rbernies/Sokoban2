@@ -8,7 +8,7 @@ namespace Sokoban2
 {
     class FileReader
     {
-        public Dictionary<string,GameObject> GetGameObjectDictionary(String filePath)
+        public Dictionary<string, GameObject> GetGameObjectDictionary(String filePath)
         {
             Dictionary<string, GameObject> dictionary = new Dictionary<string, GameObject>();
             string text = System.IO.File.ReadAllText(@filePath);
@@ -17,7 +17,7 @@ namespace Sokoban2
             int y = 0;
             foreach (var symbol in text)
             {
-            
+
                 if (symbol == '\n')
                 {
                     y++;
@@ -74,9 +74,19 @@ namespace Sokoban2
             return dictionary;
         }
 
+        public Dictionary<string, GameObject> LoadObjectDictionary(int level) {
+          return GetGameObjectDictionary($@"C:\Users\alexa\Desktop\sokoban\Doolhof\doolhof{level}.txt");
+        }
+
+        public Dictionary<string, GameObject> LoadPiecesDictionary(int level)
+        {
+            return GetGamePiecesDictionary($@"C:\Users\alexa\Desktop\sokoban\Doolhof\doolhof{level}.txt");
+        }
+
+
+        /* For testing purposes
+         
         public void PrintDictionary() {
-            //testmethode
-            // bevat absolute paths die niet werken op andere pc's
             foreach (var item in GetGameObjectDictionary(@"C:\Users\alexa\Desktop\sokoban\Doolhof\doolhof1.txt"))
             {
                 Console.WriteLine($"{ item.Key} = { item.Value.name}");
@@ -87,7 +97,7 @@ namespace Sokoban2
                 Console.WriteLine($"{ item.Key} = { item.Value.name}");
             }
         }
-
+        */
 
 
     }
