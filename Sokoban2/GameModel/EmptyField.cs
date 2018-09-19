@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Sokoban2
 {
-    public class Wall : GameObject
+    public class EmptyField : GameObject
     {
         private string _name;
 
-        public Wall(string name)
+        public EmptyField(string name)
         {
             _name = name;
         }

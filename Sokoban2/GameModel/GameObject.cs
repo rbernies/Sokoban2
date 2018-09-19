@@ -7,5 +7,6 @@ namespace Sokoban2
 {
     public abstract class GameObject
     {
+       public abstract string name { get; set; }
     }
 }

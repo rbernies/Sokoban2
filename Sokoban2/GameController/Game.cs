@@ -9,21 +9,25 @@ namespace Sokoban2
    
     public class Game
     {
-        private IDictionary<string, string> test = new Dictionary<string, string>();
+        Truck truck = new Truck("vrachtwaggel");
+        private IDictionary<string, GameObject> test = new Dictionary<string, GameObject>();
 
         public Game()
         {
-            test.Add("5,4", "wall");
+            test.Add("5,4", truck);
             readList();
+           
+          
         }
 
         public void readList()
         {
-            Console.WriteLine(test["5,4"]);
+
+            Console.WriteLine(test["5,4"].name);
             Console.ReadKey();
         }
 
-
+       
     }
 
    
