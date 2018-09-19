@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Sokoban2
 {
-    public class Truck
+    public class Truck : GameObject
     {
     }
 }
