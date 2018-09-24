@@ -1,4 +1,5 @@
-﻿using Sokoban2.GameView;
+﻿using Sokoban2.GameModel;
+using Sokoban2.GameView;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,12 +13,23 @@ namespace Sokoban2
     {
         WelcomeScreen welcome = new WelcomeScreen();
         UserInput input = new UserInput();
-        Board board = new Board();
+        BoardModel board = new BoardModel();
 
         public Game()
         {
             welcome.displayWelcomeScreen();           
-            board.makeLevel(input.getUserInputForLevel());
-        }            
+            board.generateLevel(input.getUserInputForLevel());
+        }        
+
+        public void runGame()
+        {
+            // vraag user input
+            // kijk of zet mogelijk is (deze methode gaat net zolang door totdat er een valide zet is gedaan)
+            // teken view opnieuw
+            // doe de win check
+            // gewonnen = S voor terug naar home scherm
+            // niet gewonnen = opnieuw de runGame methode
+     
+        }
     }  
 }

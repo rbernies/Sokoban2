@@ -44,13 +44,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameController\TurnController.cs" />
+    <Compile Include="GameModel\BoardModel.cs" />
     <Compile Include="GameModel\DestinationField.cs" />
     <Compile Include="GameModel\EmptyField.cs" />
     <Compile Include="GameModel\Box.cs" />
     <Compile Include="GameController\Program.cs" />
     <Compile Include="GameController\Game.cs" />
+    <Compile Include="GameModel\FileReader.cs" />
     <Compile Include="GameModel\GameObject.cs" />
-    <Compile Include="GameView\Board.cs" />
+    <Compile Include="GameModel\Point.cs" />
+    <Compile Include="GameView\BoardView.cs" />
     <Compile Include="GameView\UserInput.cs" />
     <Compile Include="GameView\WelcomeScreen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

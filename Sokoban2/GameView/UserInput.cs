@@ -9,28 +9,28 @@ namespace Sokoban2.GameView
     class UserInput
     {
 
-        public string getUserInputForLevel()
+        public int getUserInputForLevel()
         {
-           string result = "";
+           int result = 0;
            var temp = Console.ReadKey();
             if (temp.Key == ConsoleKey.D1)
             {
-                result = "1";
+                result = 1;
                 return result;
             }
             if (temp.Key == ConsoleKey.D2)
             {
-                result = "2";
+                result = 2;
                 return result;
             }
             if (temp.Key == ConsoleKey.D3)
             {
-                result = "3";
+                result = 3;
                 return result;
             }
             if (temp.Key == ConsoleKey.D4)
             {
-                result = "4";
+                result = 4;
                 return result;
             } else
             {
