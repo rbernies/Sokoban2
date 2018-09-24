@@ -78,25 +78,25 @@ namespace Sokoban2
 
         public Dictionary<Point, GameObject> LoadObjectDictionary(int level)
         {
-            return GetGameObjectDictionary($@"C:\Users\alexa\Desktop\sokoban\Doolhof\doolhof{level}.txt");
+            return GetGameObjectDictionary($@"..\..\doolhof{level}.txt");
         }
 
         public Dictionary<Point, GameObject> LoadPiecesDictionary(int level)
         {
-            return GetGamePiecesDictionary($@"C:\Users\alexa\Desktop\sokoban\Doolhof\doolhof{level}.txt");
+            return GetGamePiecesDictionary($@"..\..\doolhof{level}.txt");
         }
 
 
          
-        public void PrintDictionary() {
-            foreach (var item in GetGameObjectDictionary(@"C:\Users\alexa\Desktop\sokoban\Doolhof\doolhof1.txt"))
+        public void PrintDictionary(int level) {
+            foreach (var item in LoadObjectDictionary(level))
             {
                 Console.WriteLine($"{ item.Key.X}, {item.Key.Y} = { item.Value.name}");
             }
             Console.WriteLine("===========================================");
-            foreach (var item in GetGamePiecesDictionary(@"C:\Users\alexa\Desktop\sokoban\Doolhof\doolhof1.txt"))
+            foreach (var item in LoadPiecesDictionary(level))
             {
-                Console.WriteLine($"{ item.Key} = { item.Value.name}");
+                Console.WriteLine($"{ item.Key.X},{item.Key.Y} = { item.Value.name}");
             }
         }
         
