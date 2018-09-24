@@ -16,12 +16,14 @@ namespace Sokoban2.GameView
             if(result == "1" || result == "2" || result == "3" || result == "4") {
                 level = Convert.ToInt32(result);
             }            
-            return level;
+            return level;           
         }
-        
-        public void printLevel(int level)
-        {
 
+       
+        
+        public void printLevel(Dictionary<string, GameObject> gameObjects, Dictionary<string, GameObject> gamePieces)
+        {
+            
         }
     }
 }
