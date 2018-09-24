@@ -51,13 +51,10 @@
     <Compile Include="GameController\Game.cs" />
     <Compile Include="GameModel\FileReader.cs" />
     <Compile Include="GameModel\GameObject.cs" />
-
     <Compile Include="GameModel\Point.cs" />
-
-    <Compile Include="GameView\Board.cs" />
+    <Compile Include="GameView\BoardView.cs" />
     <Compile Include="GameView\UserInput.cs" />
     <Compile Include="GameView\WelcomeScreen.cs" />
-
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GameModel\Truck.cs" />
     <Compile Include="GameModel\Wall.cs" />

@@ -12,7 +12,7 @@ namespace Sokoban2
     {
         WelcomeScreen welcome = new WelcomeScreen();
         UserInput input = new UserInput();
-        Board board = new Board();
+        BoardView board = new BoardView();
 
         public Game()
         {

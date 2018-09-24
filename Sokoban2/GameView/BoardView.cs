@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sokoban2.GameView
 {
-    class Board
+    class BoardView
     {
         public int makeLevel(string result)
         {
