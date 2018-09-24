@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Sokoban2
 {
+
     class Program
     {
-    
-        public static void Main(String[] args){
+        public static void Main(String[] args)
+        {
             //Game game = new Game();
-           FileReader x = new FileReader();
-           x.PrintDictionary(2);
-           Console.Read();
-            
+              FileReader x = new FileReader();
+            x.PrintDictionary(1);
+               Console.Read();
         }
 
     }

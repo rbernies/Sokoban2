@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sokoban2.GameModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sokoban2.GameView
 {
-    class Board
+    class BoardView
     {
         public int makeLevel(string result)
         {

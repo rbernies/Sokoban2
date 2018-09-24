@@ -1,4 +1,5 @@
-﻿using Sokoban2.GameView;
+﻿using Sokoban2.GameModel;
+using Sokoban2.GameView;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,12 +13,18 @@ namespace Sokoban2
     {
         WelcomeScreen welcome = new WelcomeScreen();
         UserInput input = new UserInput();
-        Board board = new Board();
-
+        BoardView board = new BoardView();
+        FileReader fileReader = new FileReader();
+        BoardModel boardModel = new BoardModel();
         public Game()
         {
-            welcome.displayWelcomeScreen();           
-            board.makeLevel(input.getUserInputForLevel());
-        }            
+            welcome.displayWelcomeScreen();
+            //   board.makeLevel(input.getUserInputForLevel());
+        }
+
+        public void loadLevel() {
+            int level = input.getUserInputForLevel();
+            boardModel.GenerateTiles(fileReader.LoadObjectDictionary(level));
+        }
     }  
 }
