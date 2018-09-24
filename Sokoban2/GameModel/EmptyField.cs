@@ -9,8 +9,9 @@ namespace Sokoban2
     {
         private string _name;
 
-        public EmptyField(string name)
+        public EmptyField   (string name)
         {
+            
             _name = name;
         }
 
