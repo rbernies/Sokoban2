@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sokoban2.GameModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,20 +9,54 @@ namespace Sokoban2.GameView
 {
     class BoardView
     {
-        public int makeLevel(string result)
+     
+        public void PrintLevel(LinkedList board)
         {
-            int level = 0;
-            Console.WriteLine("hi");
-            Console.ReadKey();
-            if(result == "1" || result == "2" || result == "3" || result == "4") {
-                level = Convert.ToInt32(result);
-            }            
-            return level;
-        }
-        
-        public void printLevel(int level)
-        {
+            Console.Clear();
+            Link currentLink = board.First;
+            Link line = board.First;
+            while (true)
+            {
+                if (currentLink.Value == null)
+                {
+                    Console.Write(" ");
+                }
+                else if (currentLink.OccupiedBy != null)
+                {
+                    if (currentLink.Value.name == "x" && currentLink.OccupiedBy.name == "o") {
+                        Console.Write("0");
+                    }else
+                    Console.Write(currentLink.OccupiedBy.name);
 
+                }
+                else {
+                    Console.Write(currentLink.Value.name);
+                }
+                if (currentLink.East == null)
+                {
+
+                    currentLink = line.South;
+                    line = line.South;
+                    Console.WriteLine();
+                }
+                else
+                {
+                    currentLink = currentLink.East;
+
+                }
+                if (board.Last == currentLink)
+                {
+                    if (currentLink.Value == null)
+                    {
+                        Console.Write(" ");
+                    }
+                    else
+                    {
+                        Console.Write(currentLink.Value.name);
+                    }
+                    break;
+                }
+            }
         }
     }
 }

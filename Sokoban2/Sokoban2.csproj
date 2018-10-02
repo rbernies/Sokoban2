@@ -51,8 +51,9 @@
     <Compile Include="GameModel\Box.cs" />
     <Compile Include="GameController\Program.cs" />
     <Compile Include="GameController\Game.cs" />
-    <Compile Include="GameModel\FileReader.cs" />
     <Compile Include="GameModel\GameObject.cs" />
+    <Compile Include="GameModel\Link.cs" />
+    <Compile Include="GameModel\LinkedList.cs" />
     <Compile Include="GameModel\Point.cs" />
     <Compile Include="GameView\BoardView.cs" />
     <Compile Include="GameView\UserInput.cs" />
