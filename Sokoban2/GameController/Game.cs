@@ -35,7 +35,7 @@ namespace Sokoban2
                 Environment.Exit(1);
             }
             else {
-                currentLevel = int.Parse(input.getUserInputForGame());
+                currentLevel = int.Parse(userInput);
                 boardModel.MakeLevel(currentLevel);
                 
             }
@@ -158,12 +158,14 @@ namespace Sokoban2
                 }
             }
             else if (dir.Equals("s")) {
+                Console.Clear();
                 StartGame();
             }
             else if (dir.Equals("r"))
             {
+                Console.Clear();
                 boardModel = new BoardModel();
-                boardModel.MakeLevel(int.Parse(input.getUserInputForGame()));
+                boardModel.MakeLevel(currentLevel);
             }
         }
 

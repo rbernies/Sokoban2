@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 namespace Sokoban2.GameView
 {
     class UserInput
-    {      
-        
+    {
+        string result;
         public string getUserInputForGame()
         {
-            string result = "";
+            //result = "";
             var temp = Console.ReadKey();
-           // Console.Write(temp);
             if (temp.Key == ConsoleKey.RightArrow)
             {
                 result = "right";
@@ -34,10 +33,13 @@ namespace Sokoban2.GameView
             {
                 result = "s";
             }
+            else if (temp.Key == ConsoleKey.R)
+            {
+                result = "r";
+            }
             else if (temp.Key == ConsoleKey.D1)
             {
-                result = "1";
-                
+                result = "1";   
             }
             else if (temp.Key == ConsoleKey.D2)
             {

@@ -15,6 +15,10 @@ namespace Sokoban2.GameView
             Console.Clear();
             Link currentLink = board.First;
             Link line = board.First;
+            Console.WriteLine("┌──────────┐");
+            Console.WriteLine("| Sokoban  |");
+            Console.WriteLine("└──────────┘");
+            Console.WriteLine("─────────────────────────────────────────────────────────────────────────");
             while (true)
             {
                 if (currentLink.Value == null)
@@ -57,6 +61,9 @@ namespace Sokoban2.GameView
                     break;
                 }
             }
+            Console.WriteLine("");
+            Console.WriteLine("─────────────────────────────────────────────────────────────────────────");
+            Console.WriteLine("> gebruik pijljestoetsen (s = stop, r = reset)");
         }
     }
 }
