@@ -47,6 +47,7 @@
     <Compile Include="GameController\TurnController.cs" />
     <Compile Include="GameModel\BoardModel.cs" />
     <Compile Include="GameModel\DestinationField.cs" />
+    <Compile Include="GameModel\Employee.cs" />
     <Compile Include="GameModel\EmptyField.cs" />
     <Compile Include="GameModel\Box.cs" />
     <Compile Include="GameController\Program.cs" />

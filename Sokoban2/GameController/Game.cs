@@ -54,6 +54,9 @@ namespace Sokoban2
             while (true)
             {
                 turnController.Move();
+                if (CurrentLevel == 6) {
+                    turnController.MoveEmployee();
+                }
                 boardView.PrintLevel(BoardModel.BoardList);
                 if (turnController.WinCheck())
                 {

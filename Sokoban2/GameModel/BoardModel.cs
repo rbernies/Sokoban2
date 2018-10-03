@@ -11,7 +11,7 @@ namespace Sokoban2.GameModel
         public LinkedList BoardList { get; }
         public Truck truck;
         public List<Box> boxList = new List<Box>();
-
+        public Employee employee;
         public BoardModel()
         {
             BoardList = new LinkedList();
@@ -37,6 +37,12 @@ namespace Sokoban2.GameModel
                     Box temp = new Box("o", newLink);
                     newLink.OccupiedBy = temp;
                     boxList.Add(temp);
+
+                }
+                else if (textArray[i] == '$')
+                {
+                    employee = new Employee("$", newLink);
+                    newLink.OccupiedBy = employee;
                 }
 
                 if (BoardList.First == null)
@@ -83,15 +89,7 @@ namespace Sokoban2.GameModel
             {
                 return new Wall("█");
             }
-            else if (i == '.')
-            {
-                return new EmptyField(".");
-            }
-            else if (i == '@')
-            {
-                return new EmptyField(".");
-            }
-            else if (i == 'o')
+            else if (i == '.' || i == 'o' || i == '$' || i == '@')
             {
                 return new EmptyField(".");
             }
@@ -103,9 +101,7 @@ namespace Sokoban2.GameModel
             {
                 return new TrapField("~");
             }
-            {
-
-            }
+            
             return null;
         }
     }
