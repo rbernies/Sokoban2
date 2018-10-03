@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sokoban2.GameModel
 {
-    class BoardModel
+    public class BoardModel
     {
         public LinkedList BoardList { get; }
         public Truck truck;
@@ -14,7 +14,6 @@ namespace Sokoban2.GameModel
 
         public BoardModel()
         {
-
             BoardList = new LinkedList();
         }
 
@@ -24,19 +23,18 @@ namespace Sokoban2.GameModel
             char[] textArray = text.ToCharArray();
             for (int i = 0; i < textArray.Length; i++)
             {
-
                 Link newLink = new Link();
                 newLink.Value = AssignValue(textArray[i]);
 
                 if (textArray[i] == '@')
                 {
-                    truck = new Truck("@",newLink);
+                    truck = new Truck("@", newLink);
                     newLink.OccupiedBy = truck;
-                    
+
                 }
                 else if (textArray[i] == 'o')
                 {
-                    Box temp = new Box("o",newLink);
+                    Box temp = new Box("o", newLink);
                     newLink.OccupiedBy = temp;
                     boxList.Add(temp);
                 }
@@ -49,7 +47,6 @@ namespace Sokoban2.GameModel
                 else if (textArray[i] == '\n' || textArray[i] == '\r')
                 {
 
-                   
                 }
                 else if (textArray[i - 1] == '\n')
                 {
@@ -61,7 +58,6 @@ namespace Sokoban2.GameModel
                     temp.South = newLink;
                     newLink.North = temp;
                     BoardList.Last = newLink;
-
                 }
                 else
                 {
@@ -77,30 +73,8 @@ namespace Sokoban2.GameModel
                     {
                         newLink.North = null;
                     }
-                    
                 }
-                
             }
-
-        }
-
-        public void printList()
-        {
-            Link x = BoardList.First;
-            //  Console.WriteLine(x.Value);
-            while (x != null)
-            {
-                if (x.Value == null)
-                {
-                    Console.Write("$");
-                }
-                else
-                {
-                    Console.Write(x.Value);
-                }
-                x = x.South;
-            }
-
         }
 
         public GameObject AssignValue(char i)
@@ -124,6 +98,13 @@ namespace Sokoban2.GameModel
             else if (i == 'x')
             {
                 return new DestinationField("x");
+            }
+            else if(i == '~')
+            {
+                return new TrapField("~");
+            }
+            {
+
             }
             return null;
         }

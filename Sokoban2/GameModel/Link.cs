@@ -13,12 +13,6 @@ namespace Sokoban2.GameModel
         public Link South { get; set; }
         public Link West { get; set; }
         public GameObject Value { get; set; }
-        public GameObject OccupiedBy { get; set; }
-
-        public Link() {
-            
-        }
-
-
+        public GameObject OccupiedBy { get; set; }       
     }
 }

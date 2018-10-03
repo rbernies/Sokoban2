@@ -9,7 +9,7 @@ namespace Sokoban2
     public class Box : GameObject
     {
         private string _name;
-        public Link Location;
+        public Link Location { get; set; }
 
         public Box(string name, Link location)
         {

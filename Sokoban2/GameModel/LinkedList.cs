@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Sokoban2.GameModel
 {
-    class LinkedList
+    public class LinkedList
     {
         public Link First { get; set; }
         public Link Last { get; set; }
         public int Length { get; set; }
-
     }
 }

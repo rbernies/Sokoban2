@@ -54,7 +54,7 @@
     <Compile Include="GameModel\GameObject.cs" />
     <Compile Include="GameModel\Link.cs" />
     <Compile Include="GameModel\LinkedList.cs" />
-    <Compile Include="GameModel\Point.cs" />
+    <Compile Include="GameModel\TrapField.cs" />
     <Compile Include="GameView\BoardView.cs" />
     <Compile Include="GameView\UserInput.cs" />
     <Compile Include="GameView\WelcomeScreen.cs" />

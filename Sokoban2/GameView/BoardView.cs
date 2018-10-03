@@ -13,12 +13,13 @@ namespace Sokoban2.GameView
         public void PrintLevel(LinkedList board)
         {
             Console.Clear();
-            Link currentLink = board.First;
-            Link line = board.First;
             Console.WriteLine("┌──────────┐");
             Console.WriteLine("| Sokoban  |");
             Console.WriteLine("└──────────┘");
             Console.WriteLine("─────────────────────────────────────────────────────────────────────────");
+
+            Link currentLink = board.First;
+            Link line = board.First;
             while (true)
             {
                 if (currentLink.Value == null)
@@ -29,7 +30,7 @@ namespace Sokoban2.GameView
                 {
                     if (currentLink.Value.name == "x" && currentLink.OccupiedBy.name == "o") {
                         Console.Write("0");
-                    }else
+                    } else
                     Console.Write(currentLink.OccupiedBy.name);
 
                 }
@@ -38,7 +39,6 @@ namespace Sokoban2.GameView
                 }
                 if (currentLink.East == null)
                 {
-
                     currentLink = line.South;
                     line = line.South;
                     Console.WriteLine();
@@ -46,7 +46,6 @@ namespace Sokoban2.GameView
                 else
                 {
                     currentLink = currentLink.East;
-
                 }
                 if (board.Last == currentLink)
                 {

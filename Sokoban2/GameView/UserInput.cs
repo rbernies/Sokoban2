@@ -9,9 +9,8 @@ namespace Sokoban2.GameView
     class UserInput
     {
         string result;
-        public string getUserInputForGame()
+        public string GetUserInputForGame()
         {
-            //result = "";
             var temp = Console.ReadKey();
             if (temp.Key == ConsoleKey.RightArrow)
             {
@@ -53,11 +52,18 @@ namespace Sokoban2.GameView
             {
                 result = "4";
             }
+            else if (temp.Key == ConsoleKey.D5)
+            {
+                result = "5";
+            }
+            else if (temp.Key == ConsoleKey.D6)
+            {
+                result = "6";
+            }
             else {
                 Console.WriteLine("Invalid input");
-                getUserInputForGame();
-            }
-            
+                GetUserInputForGame();
+            }            
             return result;
         }
     }

@@ -13,14 +13,6 @@ namespace Sokoban2
         public static void Main(String[] args)
         {
              Game game = new Game();
-           
-            /*BoardModel x = new BoardModel();
-            x.MakeLevel(1);
-            x.printList();
-            */
-            Console.Read();
-
         }
-
     }
 }
