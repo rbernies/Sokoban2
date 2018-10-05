@@ -14,11 +14,13 @@ namespace Sokoban2
         WelcomeScreen welcome = new WelcomeScreen();
         UserInput input = new UserInput();
         BoardModel board = new BoardModel();
+        BoardView boardView = new BoardView();
 
         public Game()
         {
-            welcome.displayWelcomeScreen();           
+            welcome.displayWelcomeScreen();
             board.generateLevel(input.getUserInputForLevel());
+            boardView.printBoard(board.getCurrentBoard());
         }        
 
         public void runGame()

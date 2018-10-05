@@ -21,9 +21,15 @@ namespace Sokoban2.GameView
 
        
         
-        public void printLevel(Dictionary<string, GameObject> gameObjects, Dictionary<string, GameObject> gamePieces)
+        public void printBoard(Dictionary<Point, GameObject> currentBoard)
         {
-            
+            Console.Clear();
+            int i = 0;
+            while(true)
+            {
+                Console.WriteLine(currentBoard[new Point(5, 4)]);
+                Console.ReadKey();
+            }
         }
     }
 }

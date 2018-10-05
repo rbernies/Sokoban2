@@ -10,11 +10,8 @@ namespace Sokoban2
     {
     
         public static void Main(String[] args){
-            Game game = new Game();
-          // FileReader x = new FileReader();
-          // x.PrintDictionary(2);
-           Console.Read();
-            
+           Game game = new Game();
+        //
         }
 
     }

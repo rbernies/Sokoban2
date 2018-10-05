@@ -22,5 +22,10 @@ namespace Sokoban2.GameModel
                 }
             }
         }
+
+        public Dictionary<Point, GameObject> getCurrentBoard()
+        {
+            return currentBoard;
+        }
     }
 }
