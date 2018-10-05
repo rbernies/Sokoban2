@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sokoban2.GameModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +9,10 @@ namespace Sokoban2
 {
     class Program
     {
-    
-        public static void Main(String[] args){
-            Game game = new Game();
-          // FileReader x = new FileReader();
-          // x.PrintDictionary(2);
-           Console.Read();
-            
-        }
 
+        public static void Main(String[] args)
+        {
+             Game game = new Game();
+        }
     }
 }

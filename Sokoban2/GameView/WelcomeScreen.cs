@@ -9,7 +9,7 @@ namespace Sokoban2.GameView
     class WelcomeScreen
     {
           
-        public void displayWelcomeScreen()
+        public void DisplayWelcomeScreen()
         {
             Console.WriteLine(" _____________________________________________________");
             Console.WriteLine("|Welkom bij Sokoban                                   |");
@@ -25,7 +25,7 @@ namespace Sokoban2.GameView
             Console.WriteLine("|     @ : truck                |                      |");
             Console.WriteLine("|_____________________________________________________|");
             Console.WriteLine("");
-            Console.WriteLine("> Kies een doolhof (1 - 4), s = stop");          
+            Console.WriteLine("> Kies een doolhof (1 - 6), s = stop");          
         }
     }
 }
